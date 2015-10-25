@@ -1,0 +1,16 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+"manifest_version": 2,
+"name": "Fugazi",
+"content_scripts": [
+  {
+    "matches": ["http://*/*", "https://*/*"],
+    "js": ["jquery.js","script.js"]
+  }
+],
+"permissions": ["tabs","<all_urls>"],
+"web_accessible_resources": ["jquery.js","script.js"] ,
+"description": "Fox News all but acknowledges the fugazi concert is a snooze...",
+"version": "1.0"
+}
